@@ -1,6 +1,8 @@
 package com.it_academy.practice.junit_basics;
 
+import java.util.Arrays;
 import java.util.Scanner;
+import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,5 +18,31 @@ public class Main {
         System.out.println("Minus result: " + calculator.calculate('-'));
         System.out.println("Division result: " + calculator.calculate('/'));
         System.out.println("Multiply result: " + calculator.calculate('*'));
+
+        StringRandom stringRandom = new StringRandom();
+        String [] array = stringRandom.fillInArray(5);
+        Stream streamFromArrays = Arrays.stream(array);
+
+        streamFromArrays
+                .forEach(System.out::println);
+
+        System.out.println();
+
+        array = stringRandom.toLowerCase();
+
+        Stream streamFromArrays2 = Arrays.stream(array);
+
+        streamFromArrays2
+                .forEach(System.out::println);
+
+        array = stringRandom.capitalize();
+
+        System.out.println();
+
+        Stream streamFromArrays3 = Arrays.stream(array);
+        streamFromArrays3
+                .forEach(System.out::println);
+
+
     }
 }
