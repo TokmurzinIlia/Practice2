@@ -6,9 +6,6 @@ import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
 
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
-@RunWith(JUnitPlatform.class)
-
 public class TestMetod {
 
 
