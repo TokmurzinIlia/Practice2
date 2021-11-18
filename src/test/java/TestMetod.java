@@ -1,9 +1,5 @@
 import com.it_academy.practice.junit_basics.Calculator;
 import org.junit.Test;
-import org.junit.jupiter.api.TestInstance;
-import org.junit.platform.runner.JUnitPlatform;
-import org.junit.runner.RunWith;
-
 import static org.junit.Assert.*;
 
 public class TestMetod {
