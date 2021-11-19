@@ -20,7 +20,7 @@ public class TestMetod {
             char operation = '/';
             float result = calculator.calculate(operation);
             float expected = 2;
-            assertEquals(expected, result, 0.001);
+            assertNotEquals(expected, result, 0.001);
         }
         @Test(expected = Exception.class)
     public void divideZero() {
