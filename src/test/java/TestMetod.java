@@ -22,6 +22,12 @@ public class TestMetod {
             float expected = 2;
             assertEquals(expected, result, 0.001);
         }
+        @Test(expected = Exception.class)
+    public void divideZero() {
+            Calculator calculator = new Calculator(3, 0);
+            char operation = '/';
+            float result = calculator.calculate(operation);
+        }
 
     @Test
     public void subtract() {
